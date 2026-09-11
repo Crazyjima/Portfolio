@@ -1,0 +1,427 @@
+/* ============================================
+   Portfolio — shared stylesheet
+   Palette:  #10233F (ink navy) / #F7F5EF (paper) /
+             #C99A44 (brass accent) / #3C5B7A (steel blue)
+   Type:     "Fraunces" (display) + "Inter" (body/UI)
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --ink: #10233F;
+  --paper: #F7F5EF;
+  --paper-dim: #EFEBE1;
+  --brass: #C99A44;
+  --steel: #3C5B7A;
+  --line: #D9D3C4;
+  --text: #1B2333;
+  --text-dim: #5B6472;
+  --radius: 2px;
+  --max: 960px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .display {
+  font-family: 'Fraunces', Georgia, serif;
+  color: var(--ink);
+  margin: 0 0 0.4em 0;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 600; }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 600; }
+h3 { font-size: 1.15rem; font-weight: 600; }
+
+p { color: var(--text); }
+a { color: var(--steel); }
+
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--brass);
+  margin-bottom: 0.6em;
+  display: block;
+}
+
+/* ---------- Nav ---------- */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-nav .nav-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: var(--ink);
+  border-color: var(--brass);
+}
+
+/* ---------- Layout shells ---------- */
+main { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem; }
+
+.hero {
+  padding: 5rem 0 3.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero .lede {
+  max-width: 56ch;
+  font-size: 1.1rem;
+  color: var(--text-dim);
+}
+
+.contact-strip {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.contact-strip a { text-decoration: none; }
+.contact-strip span { color: var(--text-dim); }
+
+section { padding: 3.5rem 0; border-bottom: 1px solid var(--line); }
+section:last-of-type { border-bottom: none; }
+
+/* ---------- Cards / grid ---------- */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.6rem;
+}
+
+/* ---------- Skills page ---------- */
+.skill-category {
+  margin-bottom: 3rem;
+}
+
+.skill-category > h2 {
+  border-left: 3px solid var(--brass);
+  padding-left: 0.7rem;
+}
+
+.skill-item {
+  padding: 1.3rem 0;
+  border-top: 1px solid var(--line);
+}
+.skill-item:first-of-type { border-top: none; }
+
+.skill-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.skill-head h3 { margin: 0; }
+
+.skill-level {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--steel);
+}
+
+/* five-dot proficiency scale — the structural signature of the page */
+.scale {
+  display: flex;
+  gap: 5px;
+  margin: 0.5rem 0 0.6rem;
+}
+
+.scale i {
+  width: 22px;
+  height: 6px;
+  background: var(--line);
+  border-radius: 1px;
+}
+
+.scale i.on { background: var(--brass); }
+
+.skill-example {
+  color: var(--text-dim);
+  font-size: 0.94rem;
+  margin: 0;
+}
+
+.gap-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.gap-list li {
+  padding: 0.9rem 1rem;
+  background: var(--paper-dim);
+  border-left: 3px solid var(--steel);
+  font-size: 0.94rem;
+}
+
+/* ---------- Goals page ---------- */
+.timeline {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.timeline .card {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.timeline .span {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  color: var(--brass);
+  font-size: 0.95rem;
+}
+
+.timeline .range {
+  display: block;
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  font-weight: 500;
+  margin-top: 0.2rem;
+}
+
+.plan-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.94rem;
+}
+
+.plan-table th, .plan-table td {
+  text-align: left;
+  padding: 0.8rem 0.6rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.plan-table th {
+  font-family: 'Fraunces', serif;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.values-quote {
+  font-family: 'Fraunces', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--ink);
+  border-left: 3px solid var(--brass);
+  padding-left: 1.2rem;
+  margin: 0;
+  max-width: 60ch;
+}
+
+/* ---------- Projects page ---------- */
+.project {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.8rem 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.project-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.project-head h3 { margin: 0; }
+
+.project-role {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+.project-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+}
+
+.project-meta dt {
+  font-family: 'Fraunces', serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--steel);
+  margin: 0 0 0.25rem;
+}
+
+.project-meta dd {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.94rem;
+}
+
+.project-meta .full { grid-column: 1 / -1; }
+
+.evidence-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.2rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--steel);
+  text-decoration: none;
+  border-bottom: 1px solid var(--steel);
+  padding-bottom: 2px;
+}
+
+/* ---------- Gap Analysis page ---------- */
+.roadmap-item {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 0 1.2rem;
+  padding-bottom: 1.8rem;
+  position: relative;
+}
+
+.roadmap-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 34px;
+  bottom: 0;
+  width: 1px;
+  background: var(--line);
+}
+
+.roadmap-num {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.roadmap-item h3 { margin: 0 0 0.5rem; }
+
+.roadmap-plan {
+  background: var(--paper-dim);
+  border-left: 3px solid var(--brass);
+  padding: 0.9rem 1.1rem;
+  font-size: 0.92rem;
+  margin-top: 0.6rem;
+}
+
+.roadmap-plan strong {
+  color: var(--ink);
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.3rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  padding: 2.5rem 1.5rem 3rem;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 720px) {
+  .nav-links { gap: 1.1rem; }
+  .grid-2 { grid-template-columns: 1fr; }
+  .timeline .card { grid-template-columns: 1fr; gap: 0.4rem; }
+  .project-meta { grid-template-columns: 1fr; }
+  .hero { padding: 3rem 0 2.2rem; }
+  section { padding: 2.5rem 0; }
+}
+
+@media (max-width: 520px) {
+  .site-nav .nav-inner { flex-direction: column; gap: 0.8rem; align-items: flex-start; }
+  .nav-links { gap: 1rem; flex-wrap: wrap; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 2px;
+}

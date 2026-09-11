@@ -3,240 +3,424 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skills — Jericho Dela Torre Estores</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<title>Skills Inventory — Jericho Dela Torre Estores</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav class="site-nav">
-  <div class="wrap">
-    <a href="index.html" class="brand"><span class="brand-mark"></span>J. ESTORES</a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">MENU</button>
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">Jericho Dela Torre Estores</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="skills.html" aria-current="page">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
       <li><a href="goals.html">Career Goals</a></li>
+      <li><a href="gap-analysis.html">Gap Analysis</a></li>
     </ul>
   </div>
 </nav>
 
-<header class="hero" style="padding-bottom:40px;">
-  <div class="wrap">
-    <p class="eyebrow">Key Skills Inventory</p>
-    <h1>What I know, and how well I know it.</h1>
-    <p class="lede">
-      Every skill below is rated on a 5-level scale — Novice, Beginner, Intermediate,
-      Proficient, Expert — with a real example of where I applied it. Replace the
-      sample entries with your own honest ratings and specific project references.
-    </p>
-  </div>
-</header>
+<main>
+  <section class="hero" style="padding-bottom: 2.5rem;">
+    <span class="eyebrow">Key Skills Inventory</span>
+    <h1>What I can do, and how far along I am.</h1>
+    <p class="lede">Each skill is rated on a five-level scale — Novice, Beginner,
+    Intermediate, Proficient, Expert — with a real example of where I applied it.</p>
+  </section>
 
-<section>
-  <div class="wrap">
+  <!-- Programming Languages -->
+  <section class="skill-category">
+    <h2>Programming Languages</h2>
 
-    <!-- PROGRAMMING LANGUAGES -->
-    <div class="skill-category">
-      <div class="skill-category-head">
-        <h2>Programming Languages</h2>
-        <span class="skill-count">3 listed</span>
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Python</h3>
+        <span class="skill-level">Proficient</span>
       </div>
-
-      <div class="skill-row">
-        <div>
-          <div class="skill-name">Python</div>
-          <div class="skill-level-label">Proficient</div>
-          <div class="skill-meter">
-            <span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span>
-          </div>
-        </div>
-        <p class="skill-example"><strong>Where I used it:</strong> Applied in my Capstone Project for data analysis and automation scripts; built a web scraper to collect research data.</p>
+      <div class="scale" aria-label="Proficient, 4 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i>
       </div>
-
-      <div class="skill-row">
-        <div>
-          <div class="skill-name">Java</div>
-          <div class="skill-level-label">Intermediate</div>
-          <div class="skill-meter">
-            <span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span>
-          </div>
-        </div>
-        <p class="skill-example"><strong>Where I used it:</strong> Used throughout Object-Oriented Programming coursework; developed a simple student management system.</p>
-      </div>
-
-      <div class="skill-row">
-        <div>
-          <div class="skill-name">JavaScript</div>
-          <div class="skill-level-label">Beginner</div>
-          <div class="skill-meter">
-            <span class="filled"></span><span class="filled"></span><span></span><span></span><span></span>
-          </div>
-        </div>
-        <p class="skill-example"><strong>Where I used it:</strong> Created small interactive features (form validation, toggles) for a personal website project.</p>
-      </div>
+      <p class="skill-example">Applied in my Capstone Project for data analysis and
+      automation scripts; built a web scraper to collect research data.</p>
     </div>
 
-    <!-- FRAMEWORKS & TOOLS -->
-    <div class="skill-category">
-      <div class="skill-category-head">
-        <h2>Frameworks &amp; Tools</h2>
-        <span class="skill-count">3 listed</span>
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Java</h3>
+        <span class="skill-level">Intermediate</span>
       </div>
-
-      <div class="skill-row">
-        <div>
-          <div class="skill-name">React</div>
-          <div class="skill-level-label">Beginner</div>
-          <div class="skill-meter">
-            <span class="filled"></span><span class="filled"></span><span></span><span></span><span></span>
-          </div>
-        </div>
-        <p class="skill-example"><strong>Where I used it:</strong> Built a small web app during an internship to manage event registrations.</p>
+      <div class="scale" aria-label="Intermediate, 3 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i>
       </div>
-
-      <div class="skill-row">
-        <div>
-          <div class="skill-name">Django</div>
-          <div class="skill-level-label">Intermediate</div>
-          <div class="skill-meter">
-            <span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span>
-          </div>
-        </div>
-        <p class="skill-example"><strong>Where I used it:</strong> Developed a blog platform with user authentication for a coursework project.</p>
-      </div>
-
-      <div class="skill-row">
-        <div>
-          <div class="skill-name">Flutter</div>
-          <div class="skill-level-label">Beginner</div>
-          <div class="skill-meter">
-            <span class="filled"></span><span class="filled"></span><span></span><span></span><span></span>
-          </div>
-        </div>
-        <p class="skill-example"><strong>Where I used it:</strong> Experimented with mobile UI design and layout in a personal side project.</p>
-      </div>
+      <p class="skill-example">Used throughout Object-Oriented Programming coursework;
+      developed a simple student management system with file-based persistence.</p>
     </div>
 
-    <!-- DATABASES -->
-    <div class="skill-category">
-      <div class="skill-category-head">
-        <h2>Database Management</h2>
-        <span class="skill-count">2 listed</span>
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>JavaScript</h3>
+        <span class="skill-level">Beginner</span>
       </div>
+      <div class="scale" aria-label="Beginner, 2 of 5">
+        <i class="on"></i><i class="on"></i><i></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Added small interactive features (form validation, a
+      dark-mode toggle) to a personal website project.</p>
+    </div>
+  </section>
 
-      <div class="skill-row">
-        <div>
-          <div class="skill-name">MySQL</div>
-          <div class="skill-level-label">Intermediate</div>
-          <div class="skill-meter">
-            <span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span>
-          </div>
-        </div>
-        <p class="skill-example"><strong>Where I used it:</strong> Designed and queried a relational schema for a coursework inventory system.</p>
-      </div>
+  <!-- Frameworks & Tools -->
+  <section class="skill-category">
+    <h2>Frameworks &amp; Tools</h2>
 
-      <div class="skill-row">
-        <div>
-          <div class="skill-name">Firebase</div>
-          <div class="skill-level-label">Beginner</div>
-          <div class="skill-meter">
-            <span class="filled"></span><span class="filled"></span><span></span><span></span><span></span>
-          </div>
-        </div>
-        <p class="skill-example"><strong>Where I used it:</strong> Used for real-time data storage in a personal mobile app prototype.</p>
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>React</h3>
+        <span class="skill-level">Beginner</span>
       </div>
+      <div class="scale" aria-label="Beginner, 2 of 5">
+        <i class="on"></i><i class="on"></i><i></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Built a small event-registration web app during an
+      internship, working from a component structure someone else set up.</p>
     </div>
 
-    <!-- SOFTWARE ENGINEERING PRACTICES -->
-    <div class="skill-category">
-      <div class="skill-category-head">
-        <h2>Software Engineering Practices</h2>
-        <span class="skill-count">2 listed</span>
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Django</h3>
+        <span class="skill-level">Intermediate</span>
       </div>
-
-      <div class="skill-row">
-        <div>
-          <div class="skill-name">Git / GitHub</div>
-          <div class="skill-level-label">Proficient</div>
-          <div class="skill-meter">
-            <span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span>
-          </div>
-        </div>
-        <p class="skill-example"><strong>Where I used it:</strong> Managed version control and branching across every group project since sophomore year.</p>
+      <div class="scale" aria-label="Intermediate, 3 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i>
       </div>
-
-      <div class="skill-row">
-        <div>
-          <div class="skill-name">Agile / Scrum</div>
-          <div class="skill-level-label">Beginner</div>
-          <div class="skill-meter">
-            <span class="filled"></span><span class="filled"></span><span></span><span></span><span></span>
-          </div>
-        </div>
-        <p class="skill-example"><strong>Where I used it:</strong> Followed sprint cycles and stand-ups during a team capstone project.</p>
-      </div>
+      <p class="skill-example">Developed a blog platform with user authentication as a
+      coursework project.</p>
     </div>
 
-    <!-- SOFT SKILLS -->
-    <div class="skill-category">
-      <div class="skill-category-head">
-        <h2>Soft Skills</h2>
-        <span class="skill-count">2 listed</span>
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Flutter</h3>
+        <span class="skill-level">Beginner</span>
       </div>
+      <div class="scale" aria-label="Beginner, 2 of 5">
+        <i class="on"></i><i class="on"></i><i></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Experimented with mobile UI layout and state in a
+      personal weekend project (a habit tracker).</p>
+    </div>
+  </section>
 
-      <div class="skill-row">
-        <div>
-          <div class="skill-name">Teamwork &amp; Communication</div>
-          <div class="skill-level-label">Proficient</div>
-          <div class="skill-meter">
-            <span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span>
-          </div>
-        </div>
-        <p class="skill-example"><strong>Where I used it:</strong> Presented findings to faculty and coordinated team deliverables for the capstone defense.</p>
-      </div>
+  <!-- Database Management -->
+  <section class="skill-category">
+    <h2>Database Management</h2>
 
-      <div class="skill-row">
-        <div>
-          <div class="skill-name">Problem-Solving</div>
-          <div class="skill-level-label">Intermediate</div>
-          <div class="skill-meter">
-            <span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span>
-          </div>
-        </div>
-        <p class="skill-example"><strong>Where I used it:</strong> Debugged and resolved recurring integration issues in a team project under a tight deadline.</p>
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>MySQL</h3>
+        <span class="skill-level">Intermediate</span>
       </div>
+      <div class="scale" aria-label="Intermediate, 3 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Designed and queried a relational schema for the student
+      management system project (Java coursework).</p>
     </div>
 
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="gaps-card">
-      <p class="eyebrow">Skill Gaps</p>
-      <h2 style="color:var(--surface); margin-bottom:10px;">What I'm working on next</h2>
-      <p style="max-width:60ch;">
-        Being honest about gaps is part of the plan — here's what I still need to build,
-        and how it connects to where I want to go.
-      </p>
-      <ul class="gaps-list" style="margin-top:18px;">
-        <li><strong>Cloud computing (AWS/Azure)</strong> — needed to deploy and scale full-stack apps beyond a local environment.</li>
-        <li><strong>Cybersecurity fundamentals</strong> — relevant to almost any backend or infrastructure role I'd take.</li>
-        <li><strong>Advanced multimedia editing</strong> — would round out my ability to present technical work visually.</li>
-      </ul>
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>MongoDB</h3>
+        <span class="skill-level">Beginner</span>
+      </div>
+      <div class="scale" aria-label="Beginner, 2 of 5">
+        <i class="on"></i><i class="on"></i><i></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Used as the backing store for the Django blog project's
+      media metadata.</p>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Networking & Security -->
+  <section class="skill-category">
+    <h2>Networking &amp; Security</h2>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>TCP/IP fundamentals</h3>
+        <span class="skill-level">Beginner</span>
+      </div>
+      <div class="scale" aria-label="Beginner, 2 of 5">
+        <i class="on"></i><i class="on"></i><i></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Covered in a Networking Essentials course, including
+      subnetting exercises and packet-capture labs.</p>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Firewalls &amp; VPNs</h3>
+        <span class="skill-level">Novice</span>
+      </div>
+      <div class="scale" aria-label="Novice, 1 of 5">
+        <i class="on"></i><i></i><i></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Basic classroom exposure only — set up a home firewall
+      rule and a personal VPN client, nothing beyond that yet.</p>
+    </div>
+  </section>
+
+  <!-- Cloud & DevOps -->
+  <section class="skill-category">
+    <h2>Cloud &amp; DevOps</h2>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>AWS</h3>
+        <span class="skill-level">Novice</span>
+      </div>
+      <div class="scale" aria-label="Novice, 1 of 5">
+        <i class="on"></i><i></i><i></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Deployed one static site to S3 following a tutorial —
+      aware of the core services but haven't used them independently.</p>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Docker</h3>
+        <span class="skill-level">Beginner</span>
+      </div>
+      <div class="scale" aria-label="Beginner, 2 of 5">
+        <i class="on"></i><i class="on"></i><i></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Containerized the Django blog project locally so it
+      would run the same way on a classmate's machine.</p>
+    </div>
+  </section>
+
+  <!-- Software Engineering Practices -->
+  <section class="skill-category">
+    <h2>Software Engineering Practices</h2>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Git / GitHub</h3>
+        <span class="skill-level">Proficient</span>
+      </div>
+      <div class="scale" aria-label="Proficient, 4 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i>
+      </div>
+      <p class="skill-example">Used daily across every coursework and personal project;
+      comfortable with branching, rebasing, and resolving merge conflicts in group work.</p>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Agile methodologies</h3>
+        <span class="skill-level">Intermediate</span>
+      </div>
+      <div class="scale" aria-label="Intermediate, 3 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Ran two-week sprints with a five-person team for the
+      Capstone Project, using a Kanban board to track tasks.</p>
+    </div>
+  </section>
+
+  <!-- Data & Analytics -->
+  <section class="skill-category">
+    <h2>Data &amp; Analytics</h2>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Excel — advanced functions</h3>
+        <span class="skill-level">Intermediate</span>
+      </div>
+      <div class="scale" aria-label="Intermediate, 3 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Built pivot tables and lookup-based dashboards to
+      summarize survey data for a research methods class.</p>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Pandas &amp; NumPy</h3>
+        <span class="skill-level">Beginner</span>
+      </div>
+      <div class="scale" aria-label="Beginner, 2 of 5">
+        <i class="on"></i><i class="on"></i><i></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Cleaned and analyzed scraped data in the Capstone
+      Project's automation scripts.</p>
+    </div>
+  </section>
+
+  <!-- Productivity Tools -->
+  <section class="skill-category">
+    <h2>Productivity Tools</h2>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Microsoft Office Suite</h3>
+        <span class="skill-level">Proficient</span>
+      </div>
+      <div class="scale" aria-label="Proficient, 4 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i>
+      </div>
+      <p class="skill-example">Word and PowerPoint for every major report and defense
+      presentation throughout the program.</p>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Google Workspace</h3>
+        <span class="skill-level">Proficient</span>
+      </div>
+      <div class="scale" aria-label="Proficient, 4 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i>
+      </div>
+      <p class="skill-example">Docs and Sheets for collaborative drafting and shared
+      task tracking across group projects.</p>
+    </div>
+  </section>
+
+  <!-- Multimedia & Design -->
+  <section class="skill-category">
+    <h2>Multimedia &amp; Design</h2>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Canva</h3>
+        <span class="skill-level">Intermediate</span>
+      </div>
+      <div class="scale" aria-label="Intermediate, 3 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Designed event posters and social posts for a student
+      organization.</p>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Photoshop</h3>
+        <span class="skill-level">Beginner</span>
+      </div>
+      <div class="scale" aria-label="Beginner, 2 of 5">
+        <i class="on"></i><i class="on"></i><i></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Basic photo cleanup and cropping for event coverage
+      photos.</p>
+    </div>
+  </section>
+
+  <!-- Professional Communication -->
+  <section class="skill-category">
+    <h2>Professional Communication</h2>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Technical writing</h3>
+        <span class="skill-level">Intermediate</span>
+      </div>
+      <div class="scale" aria-label="Intermediate, 3 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Wrote the documentation and setup guide for the
+      Capstone Project's final submission.</p>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Presentation skills</h3>
+        <span class="skill-level">Intermediate</span>
+      </div>
+      <div class="scale" aria-label="Intermediate, 3 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Presented the Capstone Project findings at the program's
+      project defense in front of faculty.</p>
+    </div>
+  </section>
+
+  <!-- Collaboration Platforms -->
+  <section class="skill-category">
+    <h2>Collaboration Platforms</h2>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Trello</h3>
+        <span class="skill-level">Intermediate</span>
+      </div>
+      <div class="scale" aria-label="Intermediate, 3 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i>
+      </div>
+      <p class="skill-example">Used to manage tasks and deadlines during the Capstone
+      group project's sprints.</p>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Slack</h3>
+        <span class="skill-level">Proficient</span>
+      </div>
+      <div class="scale" aria-label="Proficient, 4 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i>
+      </div>
+      <p class="skill-example">Main coordination channel for the internship team;
+      comfortable running threads, standups, and async updates.</p>
+    </div>
+  </section>
+
+  <!-- Soft Skills -->
+  <section class="skill-category">
+    <h2>Soft Skills</h2>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Teamwork &amp; communication</h3>
+        <span class="skill-level">Proficient</span>
+      </div>
+      <div class="scale" aria-label="Proficient, 4 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i>
+      </div>
+      <p class="skill-example">Presented findings to faculty and coordinated team
+      deliverables for the Capstone Project.</p>
+    </div>
+
+    <div class="skill-item">
+      <div class="skill-head">
+        <h3>Problem-solving &amp; adaptability</h3>
+        <span class="skill-level">Proficient</span>
+      </div>
+      <div class="scale" aria-label="Proficient, 4 of 5">
+        <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i>
+      </div>
+      <p class="skill-example">Reworked the web scraper's approach twice mid-project
+      after the target site changed its structure.</p>
+    </div>
+  </section>
+
+  <!-- Skill Gaps -->
+  <section class="skill-category" style="border-bottom: none;">
+    <h2>Skill Gaps</h2>
+    <p class="skill-example" style="margin-bottom: 1rem;">Areas I'm actively working to
+    close, each tied to where I want to be professionally (see <a href="goals.html">Career
+    Goals</a> and the full <a href="gap-analysis.html">Gap Analysis</a>).</p>
+    <ul class="gap-list">
+      <li><strong>Cloud computing (AWS, Azure)</strong> — needed for almost any modern
+      full-stack role; currently at Novice level.</li>
+      <li><strong>Cybersecurity fundamentals</strong> — a gap I want closed before
+      handling production systems that touch user data.</li>
+      <li><strong>Advanced multimedia editing</strong> — useful for polishing
+      portfolio and product-demo material, currently a nice-to-have.</li>
+    </ul>
+  </section>
+</main>
 
 <footer>
-  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:10px;">
-    <span>© 2026 Jericho Dela Torre Estores</span>
-    <span>Aspiring Full-Stack Developer · Future NEET</span>
-  </div>
+  Jericho Dela Torre Estores — Aspiring Full-Stack Developer &nbsp;·&nbsp; Portfolio built for Activity 1
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
